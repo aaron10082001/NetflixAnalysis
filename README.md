@@ -1,5 +1,33 @@
 # Netflix Data Analysis Using SQL
 
+## Table of Contents
+- [Overview](#overview)
+- [Dataset Schema](#dataset-schema)
+- [Business Problems, Solutions, and Results](#business-problems-solutions-and-results)
+  - [1. Count Movies vs. TV Shows](#1-count-movies-vs-tv-shows)
+  - [2. Most Common Ratings by Content Type](#2-most-common-ratings-by-content-type)
+  - [3. Movies Released in 2020](#3-movies-released-in-2020)
+  - [4. Top 5 Content-Producing Countries](#4-top-5-content-producing-countries)
+  - [5. Longest Movie](#5-longest-movie)
+  - [6. Content Added in Last 5 Years](#6-content-added-in-last-5-years)
+  - [7. Content by Director 'Rajiv Chilaka'](#7-content-by-director-rajiv-chilaka)
+  - [8. TV Shows with More Than 5 Seasons](#8-tv-shows-with-more-than-5-seasons)
+  - [9. Content Count by Genre](#9-content-count-by-genre)
+  - [10. Top 5 Years for Indian Content Releases](#10-top-5-years-for-indian-content-releases)
+  - [11. Documentary Movies](#11-documentary-movies)
+  - [12. Content Without Directors](#12-content-without-directors)
+  - [13. Movies Featuring 'Salman Khan' (Last 10 Years)](#13-movies-featuring-salman-khan-last-10-years)
+  - [14. Top 10 Actors in Indian Movies](#14-top-10-actors-in-indian-movies)
+  - [15. Content Categorization by Keywords ('Kill' or 'Violence')](#15-content-categorization-by-keywords-kill-or-violence)
+  - [16. Average Movie Duration by Top Countries](#16-average-movie-duration-by-top-countries)
+  - [17. Content Addition Trends by Year](#17-content-addition-trends-by-year)
+  - [18. Top 5 Prolific Directors](#18-top-5-prolific-directors)
+  - [19. Popular Rating-Genre Combinations](#19-popular-rating-genre-combinations)
+  - [20. Monthly Content Addition Patterns](#20-monthly-content-addition-patterns)
+- [Visualization Plan](#visualization-plan)
+- [Findings](#findings)
+- [Conclusion](#conclusion)
+
 ## Overview
 
 This project leverages SQL to analyze Netflix's movies and TV shows dataset, delivering insights to inform content strategy. By addressing 20 business questions, I demonstrate advanced SQL skills through complex aggregations, string parsing, and temporal analysis. The analysis uncovers trends in content distribution, audience preferences, and regional patterns, showcasing my ability to extract actionable insights from raw data. Results for each query are included to highlight the dataset's key findings.
@@ -129,7 +157,7 @@ ORDER BY title;
 | The Social Dilemma                | Jeff Orlowski             | United States         | 2020         |
 | Tughlaq Durbar                    | Delhiprasad Deenadayalan  |                       | 2020         |
 
-**Insight**: 2020 saw diverse movie releases, with 188 movies identified, reflecting Netflix's focus on varied genres and regions.
+**Insight**: 2020 saw 188 movies identified, reflecting Netflix's focus on varied genres and regions.
 
 ### 4. Top 5 Content-Producing Countries
 **Purpose**: Identify key regions for content production.
