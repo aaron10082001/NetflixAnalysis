@@ -1,5 +1,5 @@
 # Netflix Data Analysis Using SQL
-![Netflix (logo.png)
+
 ## Table of Contents
 - [Overview](#overview)
 - [Dataset Schema](#dataset-schema)
