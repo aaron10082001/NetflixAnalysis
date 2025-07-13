@@ -634,28 +634,6 @@ ORDER BY EXTRACT(MONTH FROM TO_DATE(date_added, 'Month DD, YYYY'));
 
 **Insight**: July and December see high content additions, likely tied to summer and holiday seasons.
 
-## Visualization Plan
-
-To enhance insights, I propose visualizations using Python (Matplotlib/Seaborn) or Tableau:
-- **Pie Chart**: Movies vs. TV Shows (Query 1).
-- **Bar Chart**: Top 5 countries by content count (Query 4).
-- **Line Chart**: Content additions by year (Query 17).
-- **Heatmap**: Rating-genre combinations (Query 19).
-- **Bar Chart**: Monthly content additions (Query 20).
-
-**Sample Python Code** (for Query 1):
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-
-data = pd.read_sql("SELECT type, COUNT(*) AS content_count FROM netflix GROUP BY type;", conn)
-plt.pie(data['content_count'], labels=data['type'], autopct='%1.1f%%', colors=['#1f77b4', '#ff7f0e'])
-plt.title('Movies vs. TV Shows on Netflix')
-plt.show()
-```
-
-**Value**: Visualizations make insights accessible to stakeholders, enhancing decision-making.
-
 ## Findings
 
 - **Content Distribution**: Movies (69.62%) dominate over TV Shows (30.38%), but long-running series (e.g., 23 shows with >5 seasons) drive engagement.
